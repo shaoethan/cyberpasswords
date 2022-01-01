@@ -1,0 +1,40 @@
+<!doctype html>
+	<head>
+		<title>Password Generator</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="speech.css" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+	</head> 
+	<body>
+          <div class="body">
+          
+       <div class="box">  
+         
+        <h2 style="text-align:center">🎤<br>Use your voice to generate a password</h2>
+              <input type="text" name="" placeholder="Create password" id="password" readonly>
+              
+       
+              <table>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <p><button type="button" class="btn3"onclick="runSpeechRecognition()">Speech to Text</button> &nbsp; <span id="action"></span></p>
+                    </div>
+                    <div class="col-sm">
+                      <th><div id="button" class="btn1"onclick="genPassword()">Generate</div></th>
+                    </div>
+                    <div class="col-sm">
+                      <th><a  id="button" class="btn2" onclick="copyPassword()">Copy</a></th>
+                    </div>
+                  </div>
+                </div>
+              </table>
+          </div>
+          </div>
+    
+        <script src="speech.js"></script>
+	</body>
+</html> 

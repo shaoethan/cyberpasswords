@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
+    <link href="checker.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Top Navigation-->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">CyberPasswords</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li ><a href="index.html">Home</a></li>
+              <li><a href="info.html">Info</a></li>
+              <li class="active"><a href="#">Password Checker</a></li>
+            </ul>
+          </div>              
+        </nav>
+        <div class="container">
+            <form action="/action_page.php">
+              <label class="h2" for="psw">Enter Password</label>
+              <input size="20" class="form-control" type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            </form>
+          </div>
+          
+          <div id="message">
+            <h3 id="title">Your Password Should have:</h3>
+            <p id="letter" class="invalid">A lowercase letter</p>
+            <p id="capital" class="invalid">A capital letter</p>
+            <p id="number" class="invalid">A number</p>
+            <p id="length" class="invalid">Minimum of 8 characters</p>
+          </div>
+          <script src="script.js"></script>
+    </body>
+</html>
